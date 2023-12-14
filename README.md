@@ -1,6 +1,8 @@
 # CyberSecurityProject
 # Voting System README
 
+Live Demo: https://codepen.io/samipakistani/full/BaMrNGa
+
 ## Overview
 
 This repository contains a simple implementation of a voting system using the Ethereum blockchain and the Solidity programming language. The system allows the creation of elections, addition of candidates and voters, casting votes, and determining the winner of an election. Additionally, a basic web interface is provided to interact with the smart contract.
