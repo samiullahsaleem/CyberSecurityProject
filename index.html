@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+</head>
+<body>
+
+    <h1>Voting System</h1>
+
+    <h2>Create Election</h2>
+    <label for="electionName">Election Name:</label>
+    <input type="text" id="electionName">
+    <button onclick="createElection()">Create Election</button>
+
+    <h2>Add Candidate</h2>
+    <label for="electionIdAddCandidate">Election ID:</label>
+    <input type="number" id="electionIdAddCandidate">
+    <br>
+    <label for="candidateAddress">Candidate Address:</label>
+    <input type="text" id="candidateAddress">
+    <button onclick="addCandidate()">Add Candidate</button>
+
+    <h2>Add Voter</h2>
+    <label for="electionIdAddVoter">Election ID:</label>
+    <input type="number" id="electionIdAddVoter">
+    <br>
+    <label for="voterAddress">Voter Address:</label>
+    <input type="text" id="voterAddress">
+    <button onclick="addVoter()">Add Voter</button>
+
+    <h2>Vote</h2>
+    <label for="electionIdVote">Election ID:</label>
+    <input type="number" id="electionIdVote">
+    <br>
+    <label for="voterAddressVote">Voter Address:</label>
+    <input type="text" id="voterAddressVote">
+    <br>
+    <label for="candidateAddressVote">Candidate Address:</label>
+    <input type="text" id="candidateAddressVote">
+    <button onclick="vote()">Vote</button>
+
+    <h2>End Election</h2>
+    <label for="electionIdEnd">Election ID:</label>
+    <input type="number" id="electionIdEnd">
+    <button onclick="endElection()">End Election</button>
+
+    <h2>Get Winner</h2>
+    <label for="electionIdWinner">Election ID:</label>
+    <input type="number" id="electionIdWinner">
+    <button onclick="getWinner()">Get Winner</button>
+
+    <h2>Get Votes</h2>
+    <label for="electionIdVotes">Election ID:</label>
+    <input type="number" id="electionIdVotes">
+    <button onclick="getVotes()">Get Votes</button>
+    <div id="votesResult"></div>
+
+</body>
+</html>
